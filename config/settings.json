@@ -1,0 +1,195 @@
+{
+    /* ---------- 功能设置 ---------- */
+    // VS Code 自动更新
+    "update.mode": "start",
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    // 隐藏文件夹
+    "files.exclude": {
+        // "build": true
+    },
+    "git.autofetch": true,
+    "diffEditor.ignoreTrimWhitespace": false, // git隐藏空白字符的区别
+    /* 代码格式化 */
+    "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+    // "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    /* 终端 */
+    "terminal.integrated.shellIntegration.enabled": false,
+    "terminal.integrated.suggest.enabled": false,
+    "terminal.integrated.stickyScroll.enabled": false,
+    /* ---------- 外观设置 ---------- */
+    /* 窗口 */
+    "window.newWindowDimensions": "inherit", // 新窗口尺寸继承
+    "window.menuBarVisibility": "toggle", // 隐藏标题栏菜单
+    "window.commandCenter": false, // 隐藏标题栏命令中心
+    "workbench.layoutControl.enabled": false, // 隐藏标题栏布局按钮
+    "extensions.ignoreRecommendations": true, // 隐藏“插件推荐”通知
+    "workbench.startupEditor": "none", // 隐藏程序开启时的“启动”界面
+    "chat.commandCenter.enabled": false, // 隐藏标题栏Copilot图标
+    "window.zoomLevel": 1.8, // 窗口缩放
+    /* 编辑器 */
+    // "editor.fontFamily": "Rec Mono Linear, 'HarmonyOS Sans SC'", // 编辑器字体设置
+    "editor.fontFamily": "JuliaMono, 'HarmonyOS Sans SC'", // 编辑器字体设置
+    "editor.fontLigatures": true, // 连字符
+    "editor.tabSize": 2,
+    "editor.accessibilitySupport": "off",
+    /* 主题 */
+    "workbench.colorTheme": "Material Theme Ocean",
+    "workbench.iconTheme": "bearded-icons",
+    "workbench.productIconTheme": "material-product-icons",
+    "workbench.colorCustomizations": { // UI颜色自定义
+        "editorCursor.foreground": "#C6FF00",
+        "[LaserWave]": {
+            "statusBar.background": "#000000",
+            "statusBar.foreground": "#FFFFFF",
+            "statusBarItem.remoteBackground": "#5C2CC4",
+            "statusBarItem.remoteForeground": "#FFFFFF"
+        },
+        "[Material Theme*]": {
+            "toolbar.activeBackground": "#C6FF0026",
+            "button.background": "#C6FF00",
+            "button.hoverBackground": "#C6FF00cc",
+            "extensionButton.separator": "#C6FF0033",
+            "extensionButton.background": "#C6FF0014",
+            "extensionButton.foreground": "#C6FF00",
+            "extensionButton.hoverBackground": "#C6FF0033",
+            "extensionButton.prominentForeground": "#C6FF00",
+            "extensionButton.prominentBackground": "#C6FF0014",
+            "extensionButton.prominentHoverBackground": "#C6FF0033",
+            "activityBarBadge.background": "#C6FF00",
+            "activityBar.activeBorder": "#C6FF00",
+            "activityBarTop.activeBorder": "#C6FF00",
+            "list.inactiveSelectionIconForeground": "#C6FF00",
+            "list.activeSelectionForeground": "#C6FF00",
+            "list.inactiveSelectionForeground": "#C6FF00",
+            "list.highlightForeground": "#C6FF00",
+            "sash.hoverBorder": "#C6FF0080",
+            "list.activeSelectionIconForeground": "#C6FF00",
+            "scrollbarSlider.activeBackground": "#C6FF0080",
+            "editorSuggestWidget.highlightForeground": "#C6FF00",
+            "textLink.foreground": "#C6FF00",
+            "progressBar.background": "#C6FF00",
+            "pickerGroup.foreground": "#C6FF00",
+            "tab.activeBorder": "#C6FF00",
+            "notificationLink.foreground": "#C6FF00",
+            "editorWidget.resizeBorder": "#C6FF00",
+            "editorWidget.border": "#C6FF00",
+            "settings.modifiedItemIndicator": "#C6FF00",
+            "panelTitle.activeBorder": "#C6FF00",
+            "breadcrumb.activeSelectionForeground": "#C6FF00",
+            "menu.selectionForeground": "#C6FF00",
+            "menubar.selectionForeground": "#C6FF00",
+            "editor.findMatchBorder": "#C6FF00",
+            "selection.background": "#C6FF0040",
+            "statusBarItem.remoteBackground": "#C6FF0014",
+            "statusBarItem.remoteHoverBackground": "#C6FF00",
+            "statusBarItem.remoteForeground": "#C6FF00",
+            "notebook.inactiveFocusedCellBorder": "#C6FF0080",
+            "commandCenter.activeBorder": "#C6FF0080",
+            "chat.slashCommandForeground": "#C6FF00",
+            "chat.avatarForeground": "#C6FF00",
+            "activityBarBadge.foreground": "#000000",
+            "button.foreground": "#000000",
+            "statusBarItem.remoteHoverForeground": "#000000",
+            "editor.lineHighlightBackground": "#ffffff0f",
+            "editor.lineHighlightBorder": "#ffffff00",
+            "tab.activeBorderTop": "#C6FF0000",
+            "tab.unfocusedActiveBorder": "#C6FF00",
+            "tab.unfocusedActiveBorderTop": "#C6FF0000",
+            "tab.activeModifiedBorder": "#C6FF0000"
+        }
+    },
+    /* 光标 */
+    // 光标动画结合了cursor、animotion插件、custom-ui插件三者的设置
+    "editor.cursorStyle": "block", // 光标样式
+    "editor.cursorBlinking": "smooth", // 开启光标尾迹
+    "animations.UseCursorColorForCursorAnimation": true, // 开启光标尾迹颜色
+    "animations.CursorAnimation": true,
+    /* Minimap */
+    "editor.minimap.enabled": false,
+    "workbench.editor.empty.hint": "hidden",
+    "remote.autoForwardPortsSource": "hybrid",
+    "editor.minimap.renderCharacters": false,
+    /* 动画 */
+    "editor.cursorSmoothCaretAnimation": "on",
+    "animations.Install-Method": "Custom UI Style",
+    "custom-ui-style.external.imports": [
+        "file:///c:/Users/li9ht/.vscode-oss/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+    ],
+    // "custom-ui-style.external.imports": [
+    //     "file:///c:/Users/li9ht/.vscode-insiders/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+    // ],
+    // "custom-ui-style.external.imports": [
+    //     "file:///c:/Users/li9ht/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+    // ],
+    "custom-ui-style.font.sansSerif": "HarmonyOS Sans SC", // Cambria 与 PingFang SC 也好看
+    /* TODO Tree 插件 */
+    "todo-tree.general.tags": [
+        "TODO",
+        "BUG",
+        "QUESTION",
+        "CONSIDER",
+        "region",
+        "todo"
+    ],
+    "todo-tree.general.statusBar": "tags",
+    "todo-tree.regex.regex": "(//|@|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)",
+    "todo-tree.highlights.useColourScheme": true,
+    "todo-tree.highlights.customHighlight": {
+        "region": {
+            "foreground": "#0F0F0F",
+            "background": "#C6FF00",
+            "borderRadius": "0",
+            // "gutterIcon": true,
+            // "icon": "tasklist",
+            // "iconColour": "#C6FF00",
+            "type": "line"
+        },
+        "TODO": {
+            "foreground": "#040404",
+            "background": "#ffffff",
+            "icon": "tasklist",
+            "iconColour": "#ffffff",
+            "borderRadius": "0",
+            "gutterIcon": true,
+            "type": "text-and-comment"
+        },
+        "todo": {
+            "foreground": "#040404",
+            "background": "#ffffff",
+            "icon": "tasklist",
+            "iconColour": "#ffffff",
+            "borderRadius": "0",
+            "gutterIcon": true,
+            "type": "text-and-comment"
+        },
+        "BUG": {
+            "foreground": "#ffffff",
+            "background": "#ff0000",
+            "icon": "bug",
+            "iconColour": "#ff0000",
+            "borderRadius": "0",
+            "gutterIcon": true,
+            "type": "text-and-comment"
+        },
+        "QUESTION": {
+            "foreground": "#101010",
+            "background": "#52e4f4",
+            "icon": "question",
+            "iconColour": "#52e4f4",
+            "borderRadius": "0",
+            "gutterIcon": true,
+            "type": "text-and-comment"
+        },
+        "CONSIDER": {
+            "foreground": "#101010",
+            "background": "#d9a3e4",
+            "icon": "unverified",
+            "iconColour": "#d9a3e4",
+            "borderRadius": "0",
+            "gutterIcon": true,
+            "type": "text-and-comment"
+        }
+    },
+    "editor.inlayHints.enabled": "off"
+}
